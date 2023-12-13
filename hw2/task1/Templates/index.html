@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ввод данных</title>
+</head>
+<body>
+<h1>Введите данные</h1>
+{% if error %}
+<p><strong>Error:</strong> {{ error }}</p>
+{% endif %}
+<form method="post">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="age">Возраст:</label>
+    <input type="text" id="age" name="age" required>
+    <input type="submit" value="Отправить">
+</form>
+</body>
+</html>
