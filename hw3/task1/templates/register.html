@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.name.label }}<br>
+            {{ form.name(size=30) }}
+        </div>
+        <div>
+            {{ form.surname.label }}<br>
+            {{ form.surname(size=30) }}
+        </div>
+        <div>
+            {{ form.email.label }}<br>
+            {{ form.email(size=30) }}
+        </div>
+        <div>
+            {{ form.password.label }}<br>
+            {{ form.password(size=30) }}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+</body>
+</html>
